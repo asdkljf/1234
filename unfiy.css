@@ -1,6 +1,12 @@
+amiya
+/* Sets the default font style and margins for the entire web page */
 body {
     font-family: Arial, sans-serif;
+    
+margin: 0;
+      /* Removes body margins */
     margin: 0;
+      /* Removes the inside margin of the body */
     padding: 0;
 }
 header {
@@ -11,17 +17,25 @@ header {
 }
 nav {
     display: flex;
+    /* Child elements are evenly distributed along the main axis, leaving the beginning and end blank */
     justify-content: space-around;
+    /* Set the background color to dark gray */
     background-color: #555;
 }
+
+/* Sets the style of nav for the navigation bar */
 nav a {
     color: white;
+    /* Remove text decorations (underlined below) */
     text-decoration: none;
+    /* Add margins */
     padding: 0.5em 1em;
 }
+/* Sets the style of links in nav when you hover */
 nav a:hover {
     background-color: #777;
 }
+/* Sets the style of main */
 main {
     padding: 2em;
 }
@@ -30,15 +44,18 @@ footer {
     color: white;
     text-align: center;
     padding: 1em;
+    /* Positioning relative to normal document flow */
     position: relative;
+    /* Sets the element at the bottom of its container */
     bottom: 0;
     width: 100%;
-}
+}/* Sets the image style in the header */
 header img{
     position: absolute;
     width: 100px;
     height: 100px;
     left: 0;
     top: 0;
+    /* Removes the margins */ from the picture
     margin: 0;
 }
